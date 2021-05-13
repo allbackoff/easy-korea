@@ -7,9 +7,7 @@ function HomePage(styles) {
         <div className = "homepage">
             <p className = "greeting">Welcome to Easy Korea!</p>
             <div className = "subinfo">
-            <p>- - - - - - - - - - - - - - - - - - - - - - - - - -</p>
             <p className = "info"> All the informtation needed for living in Korea comfortly!</p>
-            <p>- - - - - - - - - - - - - - - - - - - - - - - - - -</p>
             </div>
         </div>
         </div>
