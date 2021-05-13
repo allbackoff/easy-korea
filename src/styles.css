@@ -1,0 +1,27 @@
+.brand {
+    margin-left: 30px;
+    font-size: larger;
+}
+.lolz {
+    text-decoration: none;
+}
+
+.body {
+    /* background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: bisque;
+
+}
+
+.navbar {
+    height: 80px;
+    
+}
+
+.navelements {
+    margin-right: 50px;
+    font-size: larger;
+}
+
+
