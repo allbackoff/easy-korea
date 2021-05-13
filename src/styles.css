@@ -1,27 +1,41 @@
 .brand {
     margin-left: 30px;
     font-size: larger;
+    
 }
 .lolz {
     text-decoration: none;
 }
 
 .body {
-    /* background-image: url("./background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
+    
     background-color: bisque;
 
 }
 
 .navbar {
     height: 80px;
+    color: teal;
     
 }
 
 .navelements {
     margin-right: 50px;
     font-size: larger;
+    
 }
 
+.homepage {
+    position: relative;
+    top: 50%;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+.greeting {
+    color: teal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+}
 

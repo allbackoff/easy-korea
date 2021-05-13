@@ -7,14 +7,14 @@ function Header() {
     
     return (
         <div>
-            <Navbar calssName = "navbar" color="dark" dark expand="md">
-                <NavbarBrand className = "brand">Easy Korea</NavbarBrand>
+            <Navbar calssName = "navbar" dark expand="md" style = {{backgroundColor: 'teal'}}>
+                <NavbarBrand className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
                 
                 <Nav className="ms-auto" navbar> 
 
-                    <NavLink href="#" className = "navelements">Emergency</NavLink>
-                    <NavLink href="#" className="navelements">Guides</NavLink>
-                    <NavLink href="#" className="navelements">Forum</NavLink>
+                    <NavLink href="#" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
+                    <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
+                    <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
                 </Nav>    
             </Navbar>
 
