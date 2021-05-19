@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import Login from './Login'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +13,7 @@ function Header() {
     return (
         <div>
             <Navbar calssName = "navbar" dark expand="md" style = {{backgroundColor: 'teal'}}>
-                <NavbarBrand className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
+                <NavbarBrand href='/' className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen = {isOpen} navbar>
                 <Nav className="ms-auto" navbar> 
@@ -25,7 +27,7 @@ function Header() {
                     <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
+                    <NavLink href="/login" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
                     </NavItem>
                 </Nav>  
                 </Collapse>

@@ -52,3 +52,89 @@
     padding: 5px;
     color: teal;
 }
+
+.login {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    background: bisque;
+    display: flex;
+}
+
+.login .loginContainer label {
+    color: white;
+    margin: 14px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+  }
+  
+  .login .loginContainer input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgba(224, 216, 216, 0.363);
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+.login .loginContainer {
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(
+      ellipse at left bottom,
+      rgb(77, 129, 33) 0%,
+      rgba(52, 165, 165, 0.9) 59%,
+      rgba(101, 174, 177, 0.9) 100%
+    );
+    box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  }
+
+  .login .loginContainer .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+  }
+  
+  .login .loginContainer .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #fff;
+  }
+
+  .login .loginContainer .btnContainer p span {
+    color: yellow;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .login .loginContainer .btnContainer p span:hover {
+    color: rgb(83, 54, 153);
+  }
+
+  .login .loginContainer .errorMsg {
+    color: red;
+    font-size: 16px;
+  }
+
+  .button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #b7da8cd7;
+    cursor: pointer;
+  }
