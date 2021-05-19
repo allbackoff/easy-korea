@@ -3,6 +3,7 @@ import fire from './fire'
 import styles from  './styles.css'
 import Header from './components/Header'
 import HomePage from './components/HomePage'
+import Page from './components/Page'
 import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
@@ -86,22 +87,32 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header styles = {styles}/>
+        <Header styles = {styles} user={user}/>
         <Switch>
-            <Route path="/login" render={(props) => (
-              <Login {...props}
-               email={email}
-               setEmail={setEmail}
-               password={password}
-               setPassword={setPassword}
-               handleLogin={handleLogin}
-               handleSignup={handleSignup}
-               hasAccount={hasAccount}
-               setHasAccount={setHasAccount}
-               emailError={emailError}
-               passwordError={passwordError}
-               />
-            )} />
+            {!user ? (
+              <Route path="/login" render={(props) => (
+                <Login {...props}
+                 email={email}
+                 setEmail={setEmail}
+                 password={password}
+                 setPassword={setPassword}
+                 handleLogin={handleLogin}
+                 handleSignup={handleSignup}
+                 hasAccount={hasAccount}
+                 setHasAccount={setHasAccount}
+                 emailError={emailError}
+                 passwordError={passwordError}
+                 user={user}
+                 handleLogout={handleLogout}
+                 />
+              )} />
+            ) : (
+              <Route path="/mypage" render={(props) => (
+                <Page {...props} 
+                handleLogout={handleLogout}
+                />
+              )} />
+            )}
             <Route path="/" component={HomePage}/>
         </Switch>
       </div>

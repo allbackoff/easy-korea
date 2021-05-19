@@ -4,6 +4,7 @@ const Login = (props) => {
     const { email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, emailError, passwordError } = props
 
     return(
+        <div>
         <section className='login'>
             <div className='loginContainer'>
                 <label>Email</label>
@@ -27,6 +28,7 @@ const Login = (props) => {
                 </div>
             </div>
         </section>
+        </div>
     )
 }
 

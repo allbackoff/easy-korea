@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar, NavbarBrand, NavLink, Collapse, NavbarToggler, NavItem} from 'reactstrap'
 
-function Header() {
+function Header({ user }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -27,7 +27,11 @@ function Header() {
                     <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/login" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
+                    {user ? (
+                        <NavLink href="/mypage" className="navelements" style={{ color: 'bisque' }}>My Page</NavLink>
+                    ) : (
+                        <NavLink href="/login" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
+                    )}
                     </NavItem>
                 </Nav>  
                 </Collapse>
