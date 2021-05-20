@@ -110,6 +110,7 @@ function App() {
               <Route path="/mypage" render={(props) => (
                 <Page {...props} 
                 handleLogout={handleLogout}
+                user={user}
                 />
               )} />
             )}

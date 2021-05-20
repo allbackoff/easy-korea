@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Login = (props) => {
     const { email, setEmail, password, setPassword, handleLogin, handleSignup, hasAccount, setHasAccount, emailError, passwordError } = props
@@ -16,12 +17,12 @@ const Login = (props) => {
                 <div className='btnContainer'>
                     {hasAccount ? (
                         <>
-                            <button className='button' onClick={handleLogin}>Log in</button>
+                            <Link to='mypage'><button className='button' onClick={handleLogin}>Log in</button></Link>
                             <p>Don't have an account? <span onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
                         </>
                     ) : (
                         <>
-                            <button className='button' onClick={handleSignup}>Sign up</button>
+                            <Link to='mypage'><button className='button' onClick={handleSignup}>Sign up</button></Link>
                             <p>Have an account? <span onClick={() => setHasAccount(!hasAccount)}>Log In</span></p>
                         </>
                     )}
