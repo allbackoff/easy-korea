@@ -21,7 +21,7 @@ function Header({ user }) {
                     <NavLink href="#" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
+                    <NavLink href="/guides" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
                     </NavItem>
                     <NavItem>
                     <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
