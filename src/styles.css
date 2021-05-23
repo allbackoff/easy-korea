@@ -138,3 +138,33 @@
     background: #b7da8cd7;
     cursor: pointer;
   }
+
+  .contents {
+    margin-top: 50px;
+    margin-bottom: 60%;
+    margin-right: 80%;
+    margin-left: 50px;
+    border: black 1px solid;
+    height: 250px;
+    width: 200px;
+    padding:4px;
+    position: relative;
+    overflow-y: auto;
+    text-align:justify;
+  }
+
+  #lolz {
+    margin-top: 50px;
+  }
+
+
+  .heading {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 600;
+  }
+
+.link {
+  color: black;
+  text-decoration: none;
+}

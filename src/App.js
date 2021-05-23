@@ -8,7 +8,9 @@ import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
 import Guides from './components/Guides';
-
+import HospitalGuide from './components/HospitalGuide'
+import AirportGuide from './components/AirportGuide'
+import DocumentsGuide from './components/DocumentsGuide'
 
 
 function App() {
@@ -115,7 +117,10 @@ function App() {
                 />
               )} />
             )}
-            <Route path="/guides" component={Guides}/>
+            <Route exact path="/guides" component={Guides}/>
+            <Route exact path="/guides/hospital" component={HospitalGuide} />
+            <Route exact path="/guides/airport" component={AirportGuide} />
+            <Route exact path="/guides/documents" component={DocumentsGuide} />
             <Route path="/" component={HomePage}/>
         </Switch>
       </div>
