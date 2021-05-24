@@ -24,7 +24,7 @@ function Header({ user }) {
                     <NavLink href="/guides" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="#" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
+                    <NavLink href="/forum" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
                     </NavItem>
                     <NavItem>
                     {user ? (
