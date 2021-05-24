@@ -18,7 +18,7 @@ function Header({ user }) {
                 <Collapse isOpen = {isOpen} navbar>
                 <Nav className="ms-auto" navbar> 
                     <NavItem>
-                    <NavLink href="#" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
+                    <NavLink href="/emergency" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
                     </NavItem>
                     <NavItem>
                     <NavLink href="/guides" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>

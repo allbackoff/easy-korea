@@ -11,6 +11,11 @@ import Guides from './components/Guides';
 import HospitalGuide from './components/HospitalGuide'
 import AirportGuide from './components/AirportGuide'
 import DocumentsGuide from './components/DocumentsGuide'
+import Emergency from './components/Emergency'
+import EmergencyReceive from './components/EmergencyReceive'
+import EmergencyGive from './components/EmergencyGive'
+import EmergencyConfirm from './components/EmergencyConfirm'
+import EmergencyHospital from './components/EmergencyHospital'
 
 
 function App() {
@@ -121,6 +126,11 @@ function App() {
             <Route exact path="/guides/hospital" component={HospitalGuide} />
             <Route exact path="/guides/airport" component={AirportGuide} />
             <Route exact path="/guides/documents" component={DocumentsGuide} />
+            <Route exact path="/emergency" component={Emergency} />
+            <Route exact path="/emergency/receive" component={EmergencyReceive} />
+            <Route exact path="/emergency/give" component={EmergencyGive} />
+            <Route exact path="/emergency/give/confirm" component={EmergencyConfirm} />
+            <Route exact path="/emergency/hospital" component={EmergencyHospital} />
             <Route path="/" component={HomePage}/>
         </Switch>
       </div>
