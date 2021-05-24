@@ -1,17 +1,18 @@
 import React from 'react'
+import {ListGroup, ListGroupItem} from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 function DocumentsGuide() {
     return (
         <div className='container'>
             <div className = 'listOfDoc'>
                 <h4>Which Document information you are looking for?</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
+                <ListGroup className = "list">
+                    <ListGroupItem className='link'><Link to={"/guides/documents/arc"} className="link">ARC</Link></ListGroupItem>
+                    <ListGroupItem className='link'><Link to={"/guides/documents/visa"} className="link">Visa</Link></ListGroupItem>
+                    <ListGroupItem className='link'><Link to={""} className="link">Residency</Link></ListGroupItem>
+                    
+                </ListGroup>
             </div>
         </div>
     )
