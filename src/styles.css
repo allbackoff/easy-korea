@@ -326,3 +326,32 @@ h2 {
 .secondhalf{
   margin-top: 50px;
 }
+
+.question {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 60px;
+  border: black 1px solid;
+  padding: 2px;
+  display:block;  
+  outline:1px;
+}
+
+.content{
+  float:left; 
+  display:block; 
+  margin:0; 
+  padding:0; 
+   
+ 
+}
+
+.date {
+  float:right; 
+  display:block; 
+  margin:0; 
+  padding:0; 
+   
+  
+}
