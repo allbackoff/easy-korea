@@ -89,7 +89,7 @@ function Forum() {
                                 <h4>Where can I find a flat for rent?</h4>
                                 {hideText ? <p id='1' style={{display: 'block'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p> : null}
                             </div>
-                            <button className="btn" onClick={onClick}>+</button>
+                            <span className="btnkotak" onClick={onClick}>+</span>
                         </div>
 
                         <div className="faq">
@@ -97,7 +97,7 @@ function Forum() {
                                 <h4>How can I find my lost items?</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
-                            <span className="btn">+</span>
+                            <span className="btnkotak">+</span>
                         </div>
 
                         <div className="faq">
@@ -105,7 +105,7 @@ function Forum() {
                                 <h4>Where can I get a telephone number?</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
-                            <span className="btn">+</span>
+                            <span className="btnkotak">+</span>
                         </div>
 
                         <div className="faq">
@@ -113,7 +113,7 @@ function Forum() {
                                 <h4>How to get to Seoul from Incheon?</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
-                            <span className="btn">+</span>
+                            <span className="btnkotak">+</span>
                         </div>
 
                         <div className="faq">
@@ -121,7 +121,7 @@ function Forum() {
                                 <h4>How can I get my ARC?</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
-                            <span className="btn">+</span>
+                            <span className="btnkotak">+</span>
                         </div>
                     </div>
                 </div>
