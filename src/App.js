@@ -13,6 +13,7 @@ import AirportGuide from './components/AirportGuide'
 import DocumentsGuide from './components/DocumentsGuide'
 import visa from'./components/Documents/visa'
 import arc from './components/Documents/arc'
+import residency from './components/Documents/residency'
 
 
 function App() {
@@ -125,6 +126,7 @@ function App() {
             <Route exact path="/guides/documents" component={DocumentsGuide} />
             <Route exact path="/guides/documents/arc" component={arc} />
             <Route exact path="/guides/documents/visa" component={visa} />
+            <Route exact path="/guides/documents/residency" component={residency} />
             <Route path="/" component={HomePage}/>
         </Switch>
         
