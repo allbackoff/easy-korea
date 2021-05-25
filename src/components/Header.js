@@ -12,7 +12,7 @@ function Header({ user }) {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <div>
-            <Navbar calssName = "navbar" dark expand="md" style = {{backgroundColor: 'teal'}}>
+            <Navbar className = "navbar" dark expand="md" style = {{backgroundColor: 'teal'}}>
                 <NavbarBrand href='/' className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen = {isOpen} navbar>

@@ -226,3 +226,68 @@ p {
   margin-top: 10px;
 }
 
+.forumcontainer {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.faq {
+  padding: 20px 30px;
+  border: 1px solid rgba(0 0 0 / .1);
+  border-radius: 5px;
+  color: #5b5f96;
+  position: relative;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+
+.faq .faq_text {
+  width: 90%;
+}
+
+.faq.open h2{
+  color: #00848f;
+}
+
+.faq p{
+  display: none;
+  font-weight: 300;
+}
+
+.faq.open p{
+  display: block;
+}
+.faq.open .btn{
+  color: #00848f;
+}
+
+.btn {
+  color: #5e5d5d;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-weight: 400;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.categories {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 360;
+  border: 1px solid rgba(0 0 0 / .1);
+  
+}
+
+.category {
+  background-color:rgb(146, 140, 140);
+}
