@@ -25,6 +25,7 @@ import EmergencyGive from './components/EmergencyGive'
 import EmergencyConfirm from './components/EmergencyConfirm'
 import EmergencyHospital from './components/EmergencyHospital'
 import EmergencyReceiveConfirmation from './components/EmergencyReceiveConfirmation'
+import AskQuestion from './components/AskQuestion'
 
 
 function App() {
@@ -137,6 +138,7 @@ function App() {
             <Route exact path="/guides/airport" component={AirportGuide} />
             <Route exact path="/guides/documents" component={DocumentsGuide} />
             <Route exact path="/forum" component={Forum} />
+            <Route exact path="/forum/ask" component={AskQuestion} />
             <Route exact path="/guides/food" component={FoodGuide}/>
             <Route exact path="/guides/transport" component={TransportGuide} />
 

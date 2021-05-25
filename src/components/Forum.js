@@ -4,9 +4,8 @@ import ListItem from '@material-ui/core/ListItem';
 import Typography from '@material-ui/core/Typography';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-
-
-
+import {Button} from 'reactstrap'
+import { Link } from 'react-router-dom'
 
 function Forum() {
     const [hideText, setHideText] = useState(false)
@@ -78,7 +77,11 @@ function Forum() {
                     </div>
 
                     <div className="col-md-6" style={{ marginTop: "20px", marginBottom: "10px"  }}    >
-                        <p>Questions</p>
+                        <div class="addquestion">
+                            <div>
+                            <Link to='/forum/ask'><Button style={{ color: "bisque", backgroundColor: "teal", width: "200px" }} size="lg" className="askq">Ask Question</Button></Link>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="col-md-3" style={{ marginTop: "20px", marginBottom: "10px"  }}    >
