@@ -8,6 +8,7 @@ import React, {useState, useEffect} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
 import Guides from './components/Guides';
+import Forum from './components/Forum';
 import HospitalGuide from './components/HospitalGuide'
 import AirportGuide from './components/AirportGuide'
 import DocumentsGuide from './components/DocumentsGuide'
@@ -33,6 +34,7 @@ function App() {
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [hasAccount, setHasAccount] = useState(false)
+  
 
   const clearInputs = () => {
     setEmail('')
@@ -134,6 +136,7 @@ function App() {
             <Route exact path="/guides/hospital" component={HospitalGuide} />
             <Route exact path="/guides/airport" component={AirportGuide} />
             <Route exact path="/guides/documents" component={DocumentsGuide} />
+            <Route exact path="/forum" component={Forum} />
             <Route exact path="/guides/food" component={FoodGuide}/>
             <Route exact path="/guides/transport" component={TransportGuide} />
 
