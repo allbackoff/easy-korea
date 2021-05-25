@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
 import Guides from './components/Guides';
 import Forum from './components/Forum';
+import Forum1 from './components/Forum1';
 import HospitalGuide from './components/HospitalGuide'
 import AirportGuide from './components/AirportGuide'
 import DocumentsGuide from './components/DocumentsGuide'
@@ -139,6 +140,7 @@ function App() {
             <Route exact path="/guides/documents" component={DocumentsGuide} />
             <Route exact path="/forum" component={Forum} />
             <Route exact path="/forum/ask" component={AskQuestion} />
+            <Route exact path="/forum1" component={Forum1} />
             <Route exact path="/guides/food" component={FoodGuide}/>
             <Route exact path="/guides/transport" component={TransportGuide} />
 

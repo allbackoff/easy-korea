@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {Button} from 'reactstrap'
 
 function AskQuestion() {
     return (
@@ -22,7 +21,7 @@ function AskQuestion() {
                     Please, write your question:
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="5" />
                 </label>
-                <input type="submit" value="Post" />
+                <Link to='/forum1'><input type="submit" value="Post" /></Link>
             </form>
         </div>
     )
