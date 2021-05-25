@@ -81,6 +81,53 @@ function Forum() {
                             <div>
                             <Link to='/forum/ask'><Button style={{ color: "bisque", backgroundColor: "teal", width: "200px" }} size="lg" className="askq">Ask Question</Button></Link>
                             </div>
+                        <p>Questions</p>
+                        
+                            <div className="question">
+                                <div className="title">
+                                    <h6>Dentistry in Ulsan</h6>
+                                </div>
+                                <div className="content">
+                                    <p>Looking for the cheapest option to save my poor teeth in Ulsan</p>
+                                </div>
+                                <div className="date">
+                                    <p>Posted on: March 26, 2021, Jeph Bessos</p>
+                                </div>
+                                
+                                    
+                                
+                                
+                            </div>
+                       
+                        <div className="question">
+                            <div className="title">
+                                <h6>Dentistry in Ulsan</h6>
+                            </div>
+                            <div className="content">
+                                <p>Looking for the cheapest option to save my poor teeth in Ulsan</p>
+                            </div>
+                            <div className="date">
+                                <p>Posted on: March 26, 2021, By Adam Saydlen</p>
+                            </div>
+
+
+
+
+                        </div>
+                        <div className="question">
+                            <div className="title">
+                                <h6>Dentistry in Ulsan</h6>
+                            </div>
+                            <div className="content">
+                                <p>Looking for the cheapest option to save my poor teeth in Ulsan</p>
+                            </div>
+                            <div className="date">
+                                <p>Posted on: March 26, 2021, By Kyle Mbappe </p>
+                            </div>
+
+
+
+
                         </div>
                     </div>
 
