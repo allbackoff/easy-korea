@@ -1,9 +1,19 @@
 import React from 'react'
+import { Breadcrumb, BreadcrumbItem } from "reactstrap"
+import { Link } from 'react-router-dom'
 
 
 function HospitalGuide() {
     return (
         <div className="container">
+            <Breadcrumb className="top">
+                <BreadcrumbItem>
+                    <Link to="/guides" className="link">Guides</Link>
+                </BreadcrumbItem>
+                <BreadcrumbItem active>
+                    Hospital
+                </BreadcrumbItem>
+            </Breadcrumb>
             <div className ="row">
                 <div className ="col-lg-4">
                     <div className = "contents">

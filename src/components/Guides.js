@@ -46,8 +46,13 @@ function Guides() {
                     <Guide title={"Documents"} />
                 </div>
                 <div className="col-md-4" style={{ marginTop: "10px" , marginBottom: "10px"   }}    >
-                    <Guide title={"Documents"} />
+                    <Guide title={"Food"} />
                 </div>
+                <div className="col-md-4" style={{ marginTop: "10px", marginBottom: "10px" }}    >
+                    <Guide title={"Transport"} />
+                </div>
+                
+
                 
             </div>
         </div>

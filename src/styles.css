@@ -226,3 +226,38 @@ background-color: bisque;
 .jobseeking {
   margin-top: 30px;
 }
+
+.bt1 {
+  color: teal;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.bt2 {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.bt3 {
+  margin-top: 40px;
+}
+
+.submitbut {
+  text-align: center;
+}
+
+.options {
+  margin-top: 30px;
+}
+
+.heading {
+  font-size: large;
+}
+
+.firsthalf {
+  margin-top: 50px;
+}
+
+.secondhalf{
+  margin-top: 50px;
+}

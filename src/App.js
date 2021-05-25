@@ -11,9 +11,19 @@ import Guides from './components/Guides';
 import HospitalGuide from './components/HospitalGuide'
 import AirportGuide from './components/AirportGuide'
 import DocumentsGuide from './components/DocumentsGuide'
+import FoodGuide from './components/FoodGuide'
+import TransportGuide from './components/TransportGuide'
+
 import visa from'./components/Documents/visa'
 import arc from './components/Documents/arc'
 import residency from './components/Documents/residency'
+
+import Emergency from './components/Emergency'
+import EmergencyReceive from './components/EmergencyReceive'
+import EmergencyGive from './components/EmergencyGive'
+import EmergencyConfirm from './components/EmergencyConfirm'
+import EmergencyHospital from './components/EmergencyHospital'
+import EmergencyReceiveConfirmation from './components/EmergencyReceiveConfirmation'
 
 
 function App() {
@@ -124,9 +134,20 @@ function App() {
             <Route exact path="/guides/hospital" component={HospitalGuide} />
             <Route exact path="/guides/airport" component={AirportGuide} />
             <Route exact path="/guides/documents" component={DocumentsGuide} />
+            <Route exact path="/guides/food" component={FoodGuide}/>
+            <Route exact path="/guides/transport" component={TransportGuide} />
+
             <Route exact path="/guides/documents/arc" component={arc} />
             <Route exact path="/guides/documents/visa" component={visa} />
             <Route exact path="/guides/documents/residency" component={residency} />
+
+            <Route exact path="/emergency" component={Emergency} />
+            <Route exact path="/emergency/receive" component={EmergencyReceive} />
+            <Route exact path="/emergency/give" component={EmergencyGive} />
+            <Route exact path="/emergency/give/confirm" component={EmergencyConfirm} />
+            <Route exact path="/emergency/hospital" component={EmergencyHospital} />
+            <Route path = "/emergency/receive/" component = {EmergencyReceiveConfirmation}/>
+
             <Route path="/" component={HomePage}/>
         </Switch>
         
