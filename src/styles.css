@@ -171,9 +171,6 @@ background-color: bisque;
   text-decoration: none;
 }
 
-p {
-  text-align: center;
-}
 
 .item {
   text-decoration: none;
@@ -270,7 +267,7 @@ h2 {
   color: #00848f;
 }
 
-.btn {
+/* .btn {
   color: #5e5d5d;
   position: absolute;
   right: 25px;
@@ -278,7 +275,7 @@ h2 {
   font-weight: 400;
   font-size: 1.4em;
   cursor: pointer;
-}
+} */
 
 .categories {
   margin-bottom: 10px;
