@@ -5,7 +5,7 @@ import Header from './components/Header'
 import HomePage from './components/HomePage'
 import Page from './components/Page'
 import React, {useState, useEffect} from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Login from './components/Login'
 import Guides from './components/Guides';
 import Forum from './components/Forum';
