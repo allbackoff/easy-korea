@@ -7,12 +7,19 @@ import Switch from '@material-ui/core/Switch';
 import { Link } from 'react-router-dom';
 import { FormGroup } from '@material-ui/core';
 import { Breadcrumb, BreadcrumbItem, Button } from "reactstrap"
+import 'react-dates/initialize'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-dates/lib/css/_datepicker.css'
+import { DateRangePicker } from 'react-dates'
 
 
 function EmergencyGive() {
     const [emergencyCategory, setEmergencyCategory] = useState(null)
     const [checked, setChecked] = useState(false)
     const [text, setText] = useState('')
+    const [startDate, setStartDate] = useState(null)
+    const [endDate, setEndDate] = useState(null)
+    const [focusedInput, setFocusedInput] = useState(null)
 
     const toggleChecked = () => {
         setChecked((prev) => !prev);
@@ -44,6 +51,19 @@ function EmergencyGive() {
                 <div className = "firsthalf">
                     <p className = "heading">Please choose the available times</p>
                     {/* TODO: Implement choosing dates */}
+                    <DateRangePicker
+                        startDate={startDate} // momentPropTypes.momentObj or null,
+                        startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
+                        endDate={endDate} // momentPropTypes.momentObj or null,
+                        endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
+                        onDatesChange={({ startDate, endDate }) => {
+                            setStartDate(startDate)
+                            setEndDate(endDate)
+                        }}// PropTypes.func.isRequired,
+                        focusedInput={focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+                        onFocusChange={focusedInput => setFocusedInput( focusedInput )} // PropTypes.func.isRequired,
+                    />
+
                     <p className="heading">or just click to change your availability status</p>
                     <FormGroup>
                         <FormControlLabel
