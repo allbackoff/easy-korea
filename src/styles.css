@@ -271,7 +271,10 @@ h2 {
   margin-bottom: 10px;
   width: 100%;
   max-width: 360;
-  border: 1px solid rgba(0 0 0 / 0.1);
+
+  border: 1px solid rgb(146, 140, 140);
+  
+
 }
 
 .category {
@@ -319,6 +322,7 @@ h2 {
 .askq {
   margin-left: 20px;
   float: right;
+
 }
 
 .forumask {
@@ -378,6 +382,7 @@ h2 {
   padding: 2px;
   display: block;
   outline: 1px;
+
   height: 100px;
 }
 
