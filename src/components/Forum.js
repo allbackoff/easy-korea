@@ -21,7 +21,7 @@ function Forum() {
         <div>
             <div className="forumcontainer">
                 <div className="row allign-items-start">
-                    <div className="col-md-3" style={{ marginTop: "20px", marginBottom: "10px" }}    >
+                    <div className="col-md-3 col-sm-6" style={{ marginTop: "20px", marginBottom: "10px" }}    >
                         <div className='categories'>
                             <List component="nav" aria-label="main folders" className='category'>
                                 <ListItem>           

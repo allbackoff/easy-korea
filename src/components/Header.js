@@ -13,24 +13,24 @@ function Header({ user }) {
     return (
         <div>
             <Navbar className = "navbar" dark expand="md" style = {{backgroundColor: 'teal'}}>
-                <NavbarBrand href='/' className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
+                <NavbarBrand href='/easy-korea/#' className="brand" style={{ color: 'bisque' }}>Easy Korea</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen = {isOpen} navbar>
                 <Nav className="ms-auto" navbar> 
                     <NavItem>
-                    <NavLink href="/emergency" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
+                    <NavLink href="/easy-korea/#/emergency" className="navelements" style = {{color: 'bisque'}}>Emergency</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/guides" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
+                    <NavLink href="/easy-korea/#/guides" className="navelements" style={{ color: 'bisque' }}>Guides</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/forum" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
+                    <NavLink href="/easy-korea/#/forum" className="navelements" style={{ color: 'bisque' }}>Forum</NavLink>
                     </NavItem>
                     <NavItem>
                     {user ? (
-                        <NavLink href="/mypage" className="navelements" style={{ color: 'bisque' }}>My Page</NavLink>
+                        <NavLink href="/easy-korea/#/mypage" className="navelements" style={{ color: 'bisque' }}>My Page</NavLink>
                     ) : (
-                        <NavLink href="/login" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
+                        <NavLink href="/easy-korea/#/login" className="navelements" style={{ color: 'bisque' }}>Login</NavLink>
                     )}
                     </NavItem>
                 </Nav>  
