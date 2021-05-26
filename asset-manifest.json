@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/easy-korea/static/css/main.02f71ade.chunk.css",
-    "main.js": "/easy-korea/static/js/main.2213217c.chunk.js",
-    "main.js.map": "/easy-korea/static/js/main.2213217c.chunk.js.map",
+    "main.css": "/easy-korea/static/css/main.fc677e12.chunk.css",
+    "main.js": "/easy-korea/static/js/main.f8d25c1e.chunk.js",
+    "main.js.map": "/easy-korea/static/js/main.f8d25c1e.chunk.js.map",
     "runtime-main.js": "/easy-korea/static/js/runtime-main.44505972.js",
     "runtime-main.js.map": "/easy-korea/static/js/runtime-main.44505972.js.map",
     "static/css/2.42578a6a.chunk.css": "/easy-korea/static/css/2.42578a6a.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.cc6f0721.chunk.js.map": "/easy-korea/static/js/3.cc6f0721.chunk.js.map",
     "index.html": "/easy-korea/index.html",
     "static/css/2.42578a6a.chunk.css.map": "/easy-korea/static/css/2.42578a6a.chunk.css.map",
-    "static/css/main.02f71ade.chunk.css.map": "/easy-korea/static/css/main.02f71ade.chunk.css.map",
+    "static/css/main.fc677e12.chunk.css.map": "/easy-korea/static/css/main.fc677e12.chunk.css.map",
     "static/js/2.3cc54b61.chunk.js.LICENSE.txt": "/easy-korea/static/js/2.3cc54b61.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.44505972.js",
     "static/css/2.42578a6a.chunk.css",
     "static/js/2.3cc54b61.chunk.js",
-    "static/css/main.02f71ade.chunk.css",
-    "static/js/main.2213217c.chunk.js"
+    "static/css/main.fc677e12.chunk.css",
+    "static/js/main.f8d25c1e.chunk.js"
   ]
 }
