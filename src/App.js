@@ -2,6 +2,7 @@ import "./App.css";
 import fire from "./fire";
 import styles from "./styles.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import Page from "./components/Page";
 import React, { useState, useEffect } from "react";
@@ -174,8 +175,10 @@ function App() {
 
           <Route path="/" component={HomePage} />
         </Switch>
+        <Footer styles={styles} user={user} />
       </div>
     </Router>
+    
   );
 }
 
