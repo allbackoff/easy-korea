@@ -21,7 +21,7 @@ function EmergencyReceiveConfirmation() {
             <h1>Here are some people that can help you right now!</h1>
                 <Media >
                     <Media left middle>
-                        <Media object src={'/images/photo.png'} alt={'name'} style={imgStyle} />
+                        
                     </Media>
                     <Media body className="ml-5">
                         <Media heading>Leonel Mesi</Media>
@@ -31,7 +31,7 @@ function EmergencyReceiveConfirmation() {
                 </Media>
                 <Media >
                     <Media left middle>
-                        <Media object src={'/images/photo.png'} alt={'name'} style={imgStyle} />
+                        {/* <Media object src={'./images/photo.png'} alt={'name'} style={imgStyle} /> */}
                     </Media>
                     <Media body className="ml-5">
                         <Media heading>Jasan Steitem</Media>
@@ -41,11 +41,21 @@ function EmergencyReceiveConfirmation() {
                 </Media>
                 <Media >
                     <Media left middle>
-                        <Media object src={'/images/photo.png'} alt={'name'} style={imgStyle} />
+                        {/* <Media object src={'/images/photo.png'} alt={'name'} style={imgStyle} /> */}
                     </Media>
                     <Media body className="ml-5">
                         <Media heading>Ilon Mask</Media>
                         <h6>6 years in Korea, entrepreneur</h6>
+                        <p>Phone Number: +7 876 543 23</p>
+                    </Media>
+                </Media>
+                <Media >
+                    <Media left middle>
+                        {/* <Media object src={'/images/photo.png'} alt={'name'} style={imgStyle} /> */}
+                    </Media>
+                    <Media body className="ml-5">
+                        <Media heading>Adam Smith</Media>
+                        <h6>4 years in Korea, student</h6>
                         <p>Phone Number: +7 876 543 23</p>
                     </Media>
                 </Media>

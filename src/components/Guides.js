@@ -17,7 +17,7 @@ function Guide({title}) {
             
             <Card style = {{border:"1px black solid", borderRadius:"20px"}}>
                 <Link to ={`/guides/${title}`} className="link">
-                <CardImg src={`/images/${title}.png`} alt="hospital" style={{  borderRadius: "20px 20px 0 0", maxHeight: "350px" }}/>
+
                 <CardBody>
                     
                     <CardTitle tag="h5">{title}</CardTitle>
