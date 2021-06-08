@@ -77,7 +77,7 @@ function Header({ user }) {
                   className="navelements"
                   style={{ color: "bisque" }}
                 >
-                  Login
+                  Sign up
                 </NavLink>
               )}
             </NavItem>

@@ -1,12 +1,19 @@
 import React from 'react'
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import {db} from "../fire";
 
 function EmergencyReceiveConfirmation() {
     const imgStyle = {
         maxHeight: 128,
         maxWidth: 128
     }
+    db.collection("users").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(doc.id, " => ", doc.data());
+        });
+    });
+    console.log('test');
     return (
         <div className="container">
             <Breadcrumb className="top">

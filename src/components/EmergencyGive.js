@@ -1,28 +1,55 @@
-import React, { useState } from 'react'
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
+import React, { useEffect, useState } from 'react'
+import Checkbox from '@material-ui/core/Checkbox';
+import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Switch from '@material-ui/core/Switch';
 import { Link } from 'react-router-dom';
-import { FormGroup } from '@material-ui/core';
+//import { FormGroup } from '@material-ui/core';
 import { Breadcrumb, BreadcrumbItem, Button } from "reactstrap"
 import 'react-dates/initialize'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-dates/lib/css/_datepicker.css'
 import { DateRangePicker } from 'react-dates'
+import {fire, db} from "../fire";
 
 
 function EmergencyGive() {
     const [emergencyCategory, setEmergencyCategory] = useState(null)
-    const [checked, setChecked] = useState(false)
     const [text, setText] = useState('')
     const [startDate, setStartDate] = useState(null)
     const [endDate, setEndDate] = useState(null)
     const [focusedInput, setFocusedInput] = useState(null)
+    const [checked, setChecked] = useState(false)
+
+    useEffect(() => {
+        var docRef = db.collection("users").doc(fire.auth().currentUser.uid);
+
+        docRef.get().then((doc) => {
+        if (doc.exists) {
+            console.log("Document data:", doc.data());
+            setChecked(doc.data.available);
+            //setText(doc.data.phone_number);
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+        }).catch((error) => {
+            console.log("Error getting document:", error);
+        }); 
+    });
 
     const toggleChecked = () => {
         setChecked((prev) => !prev);
+        // var uid = fire.auth().currentUser.uid;
+        // console.log(uid);
+        // console.log("Checked value is",checked);
+        // db.collection("users").doc(uid).update({
+        //     available: checked
+        // })
+        // .then(()=>{console.log("Availability toggled successfully");})
+        // .catch((error)=>{console.log(error,"Availability toggled unsuccessfully");})
+
     };
     
     const handleChange = (event) => {
@@ -83,11 +110,11 @@ function EmergencyGive() {
                 <div className="secondhalf">
                     <p className = "heading">Choose the topics that you can help with:</p>
                     <FormControl component="fieldset">
-                        <RadioGroup onChange={handleChange} value={emergencyCategory}>
-                            <FormControlLabel value="hospital" control={<Radio />} label="Hospital" />
-                            <FormControlLabel value="airport" control={<Radio />} label="Airport" />
-                            <FormControlLabel value="documents" control={<Radio />} label="Documents" />
-                        </RadioGroup>
+                        <FormGroup onChange={handleChange} value={emergencyCategory}>
+                            <FormControlLabel value="hospital" control={<Checkbox />} label="Hospital" />
+                            <FormControlLabel value="airport" control={<Checkbox />} label="Airport" />
+                            <FormControlLabel value="documents" control={<Checkbox />} label="Documents" />
+                        </FormGroup>
                     </FormControl>
                 </div>
             </div>

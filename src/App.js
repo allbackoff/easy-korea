@@ -1,5 +1,5 @@
 import "./App.css";
-import fire from "./fire";
+import {fire, db} from "./fire";
 import styles from "./styles.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -71,6 +71,20 @@ function App() {
     fire
       .auth()
       .createUserWithEmailAndPassword(email, password)
+      .then(function (user) {
+        var uid = fire.auth().currentUser.uid;
+        //var uid = user.uid;
+        db.collection("users").doc(uid).set({
+          available: false,
+          phone_number: null,
+        })
+        .then(() => {
+          console.log("Document successfully written!");
+        })
+        .catch((error) => {
+          console.error("Error writing document: ", error);
+        });
+      })
       .catch((error) => {
         switch (error.code) {
           case "auth/email-already-in-use":
